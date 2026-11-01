@@ -25,3 +25,34 @@
 .week-link h3 {
   color: #173d32;
 }
+/* Yoga project photo gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.photo-slot {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.photo-slot img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.photo-slot strong {
+    display: block;
+    padding: 12px 4px;
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
