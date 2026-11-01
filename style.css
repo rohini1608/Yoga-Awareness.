@@ -25,34 +25,43 @@
 .week-link h3 {
   color: #173d32;
 }
-/* Yoga project photo gallery */
-.gallery-grid {
+gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 130px);
+    justify-content: center;
+    gap: 15px;
 }
 
 .photo-slot {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 14px;
+    width: 130px;
+    margin: 0 auto;
 }
 
 .photo-slot img {
-    display: block;
-    width: 100%;
-    height: 240px;
+    width: 130px;
+    height: 130px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .photo-slot strong {
+    font-size: 11px;
+    text-align: center;
     display: block;
-    padding: 12px 4px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 110px);
+    }
+
+    .photo-slot,
+    .photo-slot img {
+        width: 110px;
+    }
+
+    .photo-slot img {
+        height: 110px;
     }
 }
