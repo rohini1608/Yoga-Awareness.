@@ -65,3 +65,17 @@ gallery-grid {
         height: 110px;
     }
 }
+.week-list > a.week {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.week-list > a.week:hover {
+  background: #f2f6f1;
+}
+
+.week-list > a.week h3 {
+  color: inherit;
+}
