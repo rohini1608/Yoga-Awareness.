@@ -78,4 +78,14 @@ gallery-grid {
 
 .week-list > a.week h3 {
   color: inherit;
+ .week-list a.week {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.week-list a.week:hover {
+  background: #f2f6f1;
+}
 }
