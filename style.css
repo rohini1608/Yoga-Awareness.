@@ -89,3 +89,24 @@ gallery-grid {
   background: #f2f6f1;
 }
 }
+permission-photo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.permission-photo img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid #dce5d8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.permission-photo p {
+  margin-top: 12px;
+  color: #536b50;
+  font-size: 14px;
+}
