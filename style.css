@@ -110,3 +110,33 @@ permission-photo {
   color: #536b50;
   font-size: 14px;
 }
+.week-photo {
+  margin: 35px auto;
+  max-width: 650px;
+}
+
+.photo-placeholder {
+  min-height: 280px;
+  border: 2px dashed #a5b99c;
+  border-radius: 12px;
+  background: #f4f7f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #536b50;
+  padding: 25px;
+}
+
+.photo-placeholder span {
+  font-size: 45px;
+}
+
+.photo-placeholder h3 {
+  margin: 10px 0;
+}
+
+.photo-placeholder p {
+  font-size: 14px;
+}
