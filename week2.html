@@ -15,27 +15,29 @@ td{padding:19px 20px;border:1px solid #e5e9e5;font-size:15px;line-height:1.5;ver
 tbody tr:nth-child(even){background:#f4f7f4}td:first-child{width:11%;white-space:nowrap;color:#a17c5c;font-weight:700}td:nth-child(2){width:27%;font-weight:500}
 h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;margin:48px 0 20px}
 @media(max-width:650px){main{padding:36px 16px}th,td{padding:13px 12px;font-size:13px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}td:first-child{white-space:normal}}
- /* Week photo gallery - Dhanyam style */
+ /* Week 2 photo gallery */
 .week-photos {
   display: grid;
   grid-template-columns: repeat(2, 300px);
   justify-content: center;
+  align-items: center;
   gap: 14px;
   max-width: 650px;
-  margin: 28px auto;
+  margin: 30px auto;
 }
 
 .week-photos img {
-  width: 300px;
-  height: 190px;
-  object-fit: contain;
   display: block;
-  background: #f5f5f2;
-  border-radius: 12px;
+  width: 300px;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 10px;
   border: 1px solid #e5e5df;
+  background: #f5f5f2;
 }
 
-/* Mobile screen */
+/* Mobile view */
 @media (max-width: 650px) {
   .week-photos {
     grid-template-columns: 1fr;
@@ -44,8 +46,9 @@ h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;marg
 
   .week-photos img {
     width: 100%;
-    height: auto;
-    max-height: 230px;
+    max-width: 350px;
+    max-height: none;
+    margin: auto;
   }
 }
 </style>
@@ -63,13 +66,13 @@ h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;marg
 <tr><td>Day 5</td><td>Yoga in Daily Life and Weekly Review</td><td>Discussed simple ways to include yoga in a daily routine and reviewed the week's learning.</td></tr></tbody>
 </table></div>
   <div class="week-photos">
-  <img class="week-photo"
-       src="images/yoga1_location_12-10-2026(1)(1).jpg"
-       alt="Week 2 Yoga Awareness Discussion">
+  <div class="week-photos">
+  <img src="images/yoga1_location_12-10-2026(1) (1).jpg"
+       alt="Week 2 Yoga Awareness Activity">
 
-  <img class="week-photo"
-       src="images/yoga_location_12-10-2026(1)(2).jpg"
-       alt="Week 2 Yoga Practice">
+  <img src="images/yoga_location_12-10-2026(1) (2).jpg"
+       alt="Week 2 Yoga Awareness Activity">
+</div>
 </div>
   <div class="week-photo-placeholder">
     <span>＋</span>
