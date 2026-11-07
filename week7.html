@@ -15,6 +15,46 @@ td{padding:19px 20px;border:1px solid #e5e9e5;font-size:15px;line-height:1.5;ver
 tbody tr:nth-child(even){background:#f4f7f4}td:first-child{width:11%;white-space:nowrap;color:#a17c5c;font-weight:700}td:nth-child(2){width:27%;font-weight:500}
 h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;margin:48px 0 20px}
 @media(max-width:650px){main{padding:36px 16px}th,td{padding:13px 12px;font-size:13px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}td:first-child{white-space:normal}}
+  .week-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 760px;
+  margin: 35px auto;
+}
+
+.week-photo-placeholder {
+  height: 220px;
+  border: 1px solid #dfe5df;
+  border-radius: 4px;
+  background: #eef1eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #718078;
+  gap: 8px;
+  padding: 10px;
+}
+
+.week-photo-placeholder span {
+  font-size: 30px;
+}
+
+.week-photo-placeholder strong {
+  font-size: 14px;
+}
+
+.week-photo-placeholder small {
+  font-size: 12px;
+}
+
+@media(max-width:650px) {
+  .week-photos {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body><main>
@@ -29,6 +69,19 @@ h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;marg
 <tr><td>Day 4</td><td>Yoga in Daily Routine</td><td>Discussed practical ways to include suitable yoga practices in everyday life.</td></tr>
 <tr><td>Day 5</td><td>Feedback Review and Weekly Summary</td><td>Reviewed the feedback and summarised the awareness activities completed during the week.</td></tr></tbody>
 </table></div>
+  <div class="week-photos">
+  <div class="week-photo-placeholder">
+    <span>＋</span>
+    <strong>Week 7 Activity Photo 1</strong>
+    <small>Photo will be added here later.</small>
+  </div>
+
+  <div class="week-photo-placeholder">
+    <span>＋</span>
+    <strong>Week 7 Activity Photo 2</strong>
+    <small>Photo will be added here later.</small>
+  </div>
+</div>
 <a class="back" href="index.html">← Back to all activities</a>
 <footer><strong>Yoga Awareness and Practice</strong><br>Community Service Project | Bandi Rohini<br>Sree Venkateswara College of Engineering, Nellore</footer>
 </main></body></html>
