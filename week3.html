@@ -14,43 +14,25 @@ thead{background:#254b43;color:#fff}th{text-align:left;padding:17px 20px;font-si
 td{padding:19px 20px;border:1px solid #e5e9e5;font-size:15px;line-height:1.5;vertical-align:top}
 tbody tr:nth-child(even){background:#f4f7f4}td:first-child{width:11%;white-space:nowrap;color:#a17c5c;font-weight:700}td:nth-child(2){width:27%;font-weight:500}
 h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;margin:48px 0 20px}
-.week-photos {
+.week-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 760px;
+  gap: 18px;
+  max-width: 900px;
   margin: 35px auto;
 }
 
-.week-photo-placeholder {
-  height: 220px;
-  border: 1px solid #dfe5df;
-  border-radius: 4px;
-  background: #eef1eb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #718078;
-  gap: 8px;
-  padding: 10px;
+.week-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #e2e7df;
 }
 
-.week-photo-placeholder span {
-  font-size: 30px;
-}
-
-.week-photo-placeholder strong {
-  font-size: 14px;
-}
-
-.week-photo-placeholder small {
-  font-size: 12px;
-}
-
-@media(max-width:650px) {
-  .week-photos {
+@media (max-width: 650px) {
+  .week-gallery {
     grid-template-columns: 1fr;
   }
 }
@@ -68,12 +50,17 @@ h2{font-family:Georgia,'Times New Roman',serif;font-size:30px;color:#29453c;marg
 <tr><td>Day 4</td><td>Posture and Body Alignment</td><td>Explained balance, comfortable positioning, steady breathing, and correct alignment.</td></tr>
 <tr><td>Day 5</td><td>Practice and Weekly Review</td><td>Revised the warm-up movements and standing postures and discussed participants' experiences.</td></tr></tbody>
 </table></div>
-  <div class="week-photos">
-  <div class="week-photo-placeholder">
-    <span>＋</span>
-    <strong>Week 3 Activity Photo 1</strong>
-    <small>Photo will be added here later.</small>
-  </div>
+  <h2 class="gallery-title">Image Gallery</h2>
+
+<div class="week-gallery">
+  <img
+    src="images/Covered%20Terrace%20Yoga%20Class%20Timestamp.png"
+    alt="Covered Terrace Yoga Class">
+
+  <img
+    src="images/Rooftop%20Yoga%20Class%20with%20Location%20Overlay.png"
+    alt="Rooftop Yoga Class with Location Overlay">
+</div>
 
   <div class="week-photo-placeholder">
     <span>＋</span>
